@@ -196,7 +196,7 @@ class ModalBottomSheetRoute<T> extends PopupRoute<T> {
     // and isn't exposed to the top padding of the MediaQuery.
     Widget bottomSheet = MediaQuery.removePadding(
       context: context,
-      // removeTop: true,
+      removeTop: true,
       child: _ModalBottomSheet<T>(
         closeProgressThreshold: closeProgressThreshold,
         route: this,
